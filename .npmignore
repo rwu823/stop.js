@@ -4,6 +4,7 @@
 /src
 /dev
 /scripts
+/assets
 .nyc_output
 
 /*.md
