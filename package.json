@@ -19,7 +19,8 @@
   },
   "nyc": {},
   "keywords": [
-    "stop", "callback"
+    "stop",
+    "callback"
   ],
   "author": "Rocky Wu <rocky823@gmail.com>",
   "license": "MIT",
@@ -47,5 +48,16 @@
   },
   "dependencies": {
     "setimmediate": "^1.0.4"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rwu823/stop.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rwu823/stop.js/issues"
+  },
+  "homepage": "https://github.com/rwu823/stop.js#readme"
 }
