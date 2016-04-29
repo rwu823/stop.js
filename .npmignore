@@ -3,9 +3,10 @@
 /test
 /src
 /dev
+/scripts
+.nyc_output
 
 /*.md
 /*.js
 /.*
-/.nyc_output
-/scripts
+
