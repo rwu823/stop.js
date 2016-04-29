@@ -1,4 +1,6 @@
-# Stop.js [![version](https://img.shields.io/npm/v/stop.js.svg?label=version)](https://www.npmjs.org/package/stop.js) [![Build Status](https://img.shields.io/travis/rwu823/stop.js.svg?branch=master)](https://travis-ci.org/rwu823/stop.js/) [![Coverage](https://img.shields.io/coveralls/rwu823/stop.js.svg)](https://coveralls.io/github/rwu823/stop.js)
+[![version](https://img.shields.io/npm/v/stop.js.svg?label=version)](https://www.npmjs.org/package/stop.js) [![Build Status](https://img.shields.io/travis/rwu823/stop.js.svg?branch=master)](https://travis-ci.org/rwu823/stop.js/) [![Coverage](https://img.shields.io/coveralls/rwu823/stop.js.svg)](https://coveralls.io/github/rwu823/stop.js)
+
+# Stop.js
 
 The Promise base `setTimeout`, reduce your callback
 

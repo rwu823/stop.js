@@ -1,7 +1,7 @@
 {
   "name": "stop.js",
-  "version": "0.1.0",
-  "description": "The Promise base `setTimeout`, reduce your callback",
+  "version": "0.1.1",
+  "description": "The Promise base setTimeout, reduce your callback",
   "main": "dist/stop.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
