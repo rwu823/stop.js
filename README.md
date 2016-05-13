@@ -29,7 +29,7 @@ import stop from 'stop.js'
 
 async function asyncFunc() {
   console.log(1)
-  await stop(5)
+  await stop(5000)
   console.log(2) // slow than 5 secs
 }
 
@@ -64,4 +64,4 @@ console.log(2)
 
 ## API
 
-### stop([sec = 0])
+### stop([ms = 0])
