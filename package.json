@@ -4,8 +4,8 @@
   "description": "The Promise base setTimeout, reduce your callback",
   "main": "dist/stop.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
-    "build": "export NODE_ENV=production && babel-node ./scripts/build",
+    "dev": "webpack-dev-server --inline --hot --content-base=dev",
+    "build": "NODE_ENV=production babel-node ./scripts/build",
     "test": "nyc ava -v",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
