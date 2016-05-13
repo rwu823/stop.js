@@ -3,6 +3,9 @@
 # Stop.js
 The Promise based `setTimeout` and `setImmediate` for the modern browsers and node.
 
+## ‼️Important
+`stop.js` change to use `milliseconds` as default unit. [#1](https://github.com/rwu823/stop.js/issues/1)
+
 ## Browser Supported
 
 ![](https://raw.githubusercontent.com/rwu823/stop.js/master/assets/supported-browsers.png)
@@ -10,8 +13,12 @@ The Promise based `setTimeout` and `setImmediate` for the modern browsers and no
 ## Why
 In ES7 `async`/`await` is awesome, but that only supported with Promise.
 
-## Setup
-Include `babel-polyfill` before use `async` and `await`
+## Installation
+```js
+npm i --save stop.js
+```
+
+Includes `babel-polyfill` before use `async` and `await`
 
 
 ## Before
@@ -37,7 +44,7 @@ asyncFunc()
 ```
 
 ## setImmediate
-`0` is default, it will calls [`setImmediate`](https://github.com/YuzuJS/setImmediate) library
+`0` is default, it will calls [`YuzuJS/setImmediate`](https://github.com/YuzuJS/setImmediate) library
 
 ```js
 console.log(1)
