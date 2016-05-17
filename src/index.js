@@ -1,13 +1,11 @@
 require('setimmediate')
 
 module.exports = (ms = 0)=> {
-  let _ms = ms
-
-  if (isNaN(_ms)) throw new Error(`${ms} is not a valid number`)
+  if (isNaN(ms)) throw new Error(`${ms} is not a valid number`)
   
-  return new Promise((resolve, reject) => {
-    if (_ms) {
-      setTimeout(resolve, _ms)
+  return new Promise(resolve => {
+    if (ms) {
+      setTimeout(resolve, ms)
     } else {
       setImmediate(resolve)
     }
