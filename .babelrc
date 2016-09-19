@@ -1,16 +1,11 @@
 {
-  "presets": [
-    "es2015",
-    "stage-0"
-  ],
-  "plugins": [
-    "transform-strict-mode"
-  ],
+  "presets": [["env", {
+    "modules": false
+  }]],
+
   "env": {
-    "production": {
-      "plugins": [
-//        "transform-remove-console"
-      ]
+    "test": {
+      "presets": ["env"],
     }
   }
 }
