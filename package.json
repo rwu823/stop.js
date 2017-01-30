@@ -1,6 +1,6 @@
 {
   "name": "stop.js",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "The Promise base setTimeout, reduce your callback",
   "main": "dist/stop.js",
   "scripts": {
