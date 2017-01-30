@@ -1,30 +1,33 @@
-const webpack = require('webpack')
-
-const isDev = process.env.NODE_ENV !== 'production'
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const isDev = !process.env.NODE_ENV
 const libName = 'stop'
 
 module.exports = {
   entry: {
     [libName]: isDev
-      ? ['babel-polyfill', './dev/client.js']
-      : ['./src/index.js'],
+      ? ['babel-polyfill', './dev/client']
+      : ['./src'],
   },
   output: {
     path: `${__dirname}/dist`,
     filename: '[name].js',
-    library: '',
-    libraryTarget: 'umd',
   },
+
+  plugins: isDev ? [
+    new HtmlWebpackPlugin()
+  ] : [],
+
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
+        exclude: /node_modules/,
+        loader: 'babel-loader',
       }
     ]
   },
-  externals: {
+
+  externals: isDev ? {} : {
     setimmediate: {
       root: 'setImmediate',
       commonjs: 'setimmediate',
@@ -32,6 +35,8 @@ module.exports = {
       amd: 'setimmediate',
     }
   },
+
   watch: isDev ,
+
   devtool: isDev ? 'eval' : ''
 }
