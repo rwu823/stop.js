@@ -44,7 +44,7 @@ asyncFunc()
 ```
 
 ## setImmediate
-`0` is default, it will calls [`YuzuJS/setImmediate`](https://github.com/YuzuJS/setImmediate) library
+`0` is default, it'll call the [`YuzuJS/setImmediate`](https://github.com/YuzuJS/setImmediate) library
 
 ```js
 console.log(1)
